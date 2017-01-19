@@ -1,0 +1,38 @@
+task 1) enable creation model:
+- book1 (line 2) - default data
+- update book1 (9)
+- book2 (line 3)
+- book3 (line 43)
+
+clear console
+task 2) enable rest insert (line 61)
+
+disable - task 1, 2
+
+clear console
+task 3) enable rest single fetch and update (line 79)
+   - single fetch
+   - followed by update
+
+disable - task 3
+
+clear console
+task 4) enable rest delete (line 119)
+
+disable task 4
+
+clear console
+task 5) enable 1, then enable collection and sync (line 136) 
+
+disable task 5, 1
+
+clear console
+task 6) enable collection fetch (line 162)
+
+disable task 6
+
+clear console
+task 7) enable collection search - need a different collection (line 184)
+
+ 
+

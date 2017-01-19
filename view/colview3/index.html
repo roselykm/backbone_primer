@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   <title>Collection view - sample2 - CRUD</title>
+		<style>
+			table {
+			   counter-reset: id;
+			}
+
+			.id-column:before {
+			   counter-increment: id; 
+			   content: counter(id);
+			}	
+		</style>
+	</head> 
+	<body>
+
+		<table border="1" id="foodlist">
+			<thead>
+			  <tr>
+			    <th scope="col">Index</th>
+			    <th scope="col">Name</th>
+			    <th scope="col">Price</th>
+			    <th scope="col">Delete</th>
+			    <th scope="col">Edit</th>
+			  </tr>
+			</thead> 
+		</table>
+
+		<p></p>
+
+		<div id="addfood"></div>
+
+		<script id="foodTemplate" type="text/template">
+			<td class="id-column"></td>
+			<td><%= name %></td> 
+			<td><%= price %></td> 
+			<td><a class='delete' href='#'>X</a></td>
+			<td><a class='edit' href='#'>Edit</a></td>
+		</script>
+
+		<script id="addFoodTemplate" type="text/template">
+			<form>
+				<input name="name" id="name" />
+				<input name="price" id="price" />
+				<input type="button" id="submit" value="Add Food" />
+			</form>
+		</script>
+
+	   <script src="js/jquery-1.11.3.min.js"></script>
+	   <script src="js/underscore-min.js"></script>
+	   <script src="js/backbone-min.js"></script>
+	   <script src="js/app.js"></script>
+
+	</body>
+</html>
